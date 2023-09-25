@@ -34,7 +34,7 @@ h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
 a:hover,
 details:hover {
   background-color: #5c7cb6;
-  display:flexbox
+  width: fit-content;
 }
 
 .links {
@@ -53,8 +53,7 @@ details:hover {
 .section{
     padding: 5px;
     position: relative;
-
-    margin: 20px 10px;
+    margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
 }
@@ -63,7 +62,7 @@ details:hover {
     padding: 20px;
     position: relative;
     align-items: center;
-    margin: 20px 10px;
+    margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
 }
