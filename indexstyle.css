@@ -1,0 +1,20 @@
+body{
+background-color: lightgrey;
+}
+
+
+h1 {
+color: navy;
+margin-left: 20px;
+text-align: center;
+}
+
+
+
+h2{
+    color:darkblue;
+}
+footer{
+    padding: 20px;
+    text-align: left;
+}
