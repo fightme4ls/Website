@@ -1,20 +1,84 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-background-color: lightgrey;
+    background-image: linear-gradient(to right, #726977, #4f0379);
 }
 
 
-h1 {
-color: navy;
-margin-left: 20px;
-text-align: center;
+h1#header {
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: azure;
+    text-align: center;
+}
+
+p#about-website{
+    font-size: 25px;
+    text-align: center;
+}
+
+h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
+    color: white;
+}
+
+.bar{
+    background-image: linear-gradient(to right, #3f3953, #7085ab);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover,
+details:hover {
+  background-color: #5c7cb6;
+  display:flexbox
+}
+
+.links {
+    margin: 10px;
+}
+
+.links a {
+    border-right: 2px solid black;
+    padding: 0 10px 0 10px;
+  }
+
+  .links a:last-child {
+    border-right: none;
+  }
+
+.section{
+    padding: 5px;
+    position: relative;
+
+    margin: 20px 10px;
+    background-image: linear-gradient(to right, #3f3953, #7085ab);
+    border-radius: 10px;
+}
+
+.favs{
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    margin: 20px 10px;
+    background-image: linear-gradient(to right, #3f3953, #7085ab);
+    border-radius: 10px;
 }
 
 
-
-h2{
-    color:darkblue;
+img#discord-icon{
+    width: 15px;
 }
+img#github-icon{
+    height: 15px;
+}
+
+
 footer{
     padding: 20px;
-    text-align: left;
+    text-align: right;
+    margin-right: 5px;
 }
