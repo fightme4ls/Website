@@ -4,6 +4,7 @@ html{
 
 body{
     background-image: linear-gradient(to right, #726977, #4f0379);
+    background-size: auto;
 }
 
 
@@ -11,6 +12,7 @@ h1#header {
     font-size: 45px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-display: auto;
     color: azure;
     text-align: center;
 }
@@ -29,10 +31,10 @@ h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-a:hover,
-details:hover {
+a:hover, details:hover {
   background-color: #5c7cb6;
   width: fit-content;
 }
@@ -42,7 +44,9 @@ details:hover {
 }
 
 .links a {
-    border-right: 2px solid black;
+    border-right: solid;
+    border-color: darkblue;
+    border-width: 2px;
     padding: 0 10px 0 10px;
   }
 
@@ -51,17 +55,17 @@ details:hover {
   }
 
 .section{
-    padding: 5px;
+    padding: 20px;
     position: relative;
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
+    
 }
 
 .favs{
     padding: 20px;
     position: relative;
-    align-items: center;
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
@@ -69,10 +73,16 @@ details:hover {
 
 
 img#discord-icon{
-    width: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    margin-left: 5px;
+    filter: opacity(75%);
 }
 img#github-icon{
-    height: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    margin-left: 5px;
+    filter: opacity(75%);
 }
 
 
