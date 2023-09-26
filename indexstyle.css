@@ -20,7 +20,7 @@ h1#header {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; 
-    animation: fadeout 5s ease-in-out forwards;
+    animation: fadeout 3.5s ease-in-out forwards;
 }
 
 p#about-website{
@@ -28,7 +28,7 @@ p#about-website{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;
+    animation: show 2s ease-in-out 2s forwards;
 }
 
 h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
@@ -42,7 +42,7 @@ h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;
+    animation: show 2s ease-in-out 2s forwards;
 }
 
 a:hover, details:hover {
@@ -66,20 +66,17 @@ a:hover, details:hover {
   }
 
 .section{
+    gap: 20px;
     padding: 20px;
     position: relative;
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px; 
     opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;  
+    animation: show 2s ease-in-out 2s forwards;  
 }
 
-.overview{
-    gap: 20px;
-    opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;
-}
+
 
 .favs{
     padding: 20px;
@@ -88,7 +85,7 @@ a:hover, details:hover {
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
     opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;
+    animation: show 2s ease-in-out 2s forwards;
 }
 
 
@@ -112,7 +109,29 @@ footer{
     margin-right: 5px;
     margin-bottom: 20px;
     opacity: 0;
-    animation: reveal 2s ease-in-out 2s forwards;
+    animation: show 2s ease-in-out 2s forwards;
+}
+
+a.button,
+input.button {
+  border: 1px solid rgb(56, 184, 189);
+  background-color: #7085ab;
+  border-radius: 20px;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  box-shadow: -1px -1px  rgb(56, 184, 189);
+}
+
+.button:focus {
+  transition: box-shadow 1ms;
+  box-shadow: 0 0;
+  transform: translateY(-1px);
+}
+
+.button:hover {
+  background-color: rgb(56, 78, 204);
+  cursor: pointer;
 }
 
 @keyframes fadeout {
@@ -132,7 +151,7 @@ footer{
 
 }
 
-@keyframes reveal {
+@keyframes show {
     0% {
         opacity: 0;
     }
