@@ -18,8 +18,16 @@ body{
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fade 2s ease-in-out forwards;    
+    animation: fade 3s ease-in-out forwards;    
     text-decoration: underline;
+}
+
+p#about-page{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    opacity: 0;
+    animation: show 2s ease-in-out 2s forwards;
 }
 
 h1,h2, h3, h4, h5, h6, div, p, td, a, em, i{
@@ -85,11 +93,8 @@ input.button {
 
 .button:hover {
   background-color: rgb(56, 78, 204);
+  color: black;
   cursor: pointer;
-}
-
-.array:hover{
-    background-color: rgb(56, 78, 204);
 }
 
 footer{
@@ -103,16 +108,19 @@ footer{
 
 @keyframes fade {
     0% {
-        font-size: 75px;
-    }
-    25% {
-        font-size: 75px;
-    }
-    75% {
         font-size: 50px;
     }
+    25% {
+        font-size: 50px;
+        opacity: 0.75;
+    }
+    75% {
+        font-size: 35px;
+        opacity: 0.5
+    }
     100% {
-        font-size: 50px; 
+        font-size: 35px; 
+        opacity: 0;
     }
 
 }
