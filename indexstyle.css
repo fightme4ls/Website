@@ -32,7 +32,15 @@ p#about-website{
 }
 
 h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
-    color: white;
+    color: azure;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+li{
+    margin-bottom: 10px;
 }
 
 .bar{
@@ -76,8 +84,6 @@ a:hover, details:hover {
     animation: show 2s ease-in-out 2s forwards;  
 }
 
-
-
 .favs{
     padding: 20px;
     position: relative;
@@ -88,20 +94,19 @@ a:hover, details:hover {
     animation: show 2s ease-in-out 2s forwards;
 }
 
-
 img#discord-icon{
     max-width: 15px;
     min-height: 15px;
     margin-left: 5px;
     filter: opacity(75%);
 }
+
 img#github-icon{
     max-width: 15px;
     min-height: 15px;
     margin-left: 5px;
     filter: opacity(75%);
 }
-
 
 footer{
     padding: 5px;
@@ -136,16 +141,16 @@ input.button {
 
 @keyframes fadeout {
     0% {
-        font-size: 200px;
+        font-size: 150px;
     }
     25% {
-        font-size: 200px;
+        font-size: 150px;
     }
     75% {
-        font-size: 80px;
+        font-size: 50px;
     }
     100% {
-        font-size: 80px;
+        font-size: 50px;
         opacity: 0; 
     }
 

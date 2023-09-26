@@ -21,10 +21,11 @@ h2#stuffaboutme {
     transform: translate(-50%, -50%);
     opacity: 1; 
     animation: fade 5s ease-in-out forwards;
+    text-decoration: underline;
 }
 
 h1,h2, h3, h4, h5, h6, div, p, td, a, em, i{
-    color: white;
+    color: azure;
 }
 
 .back{
@@ -39,7 +40,7 @@ h1,h2, h3, h4, h5, h6, div, p, td, a, em, i{
 
 .goback{
     margin: 10px;
-    gap: 40px;
+    float: left;
 }
 
 a:hover, details:hover {
