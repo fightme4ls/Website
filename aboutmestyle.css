@@ -30,6 +30,7 @@ h1,h2, h3, h4, h5, h6, div, p, td, a, em, i{
 
 .goback{
     margin: 10px;
+    gap: 40px;
 }
 
 a:hover, details:hover {

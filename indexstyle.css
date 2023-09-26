@@ -59,8 +59,12 @@ a:hover, details:hover {
     position: relative;
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
-    border-radius: 10px;
-    
+    border-radius: 10px;   
+}
+
+.overview{
+    gap: 20px;
+
 }
 
 .favs{
