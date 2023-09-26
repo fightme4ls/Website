@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <link rel="stylesheet" href="aboutmestyle.css">
 </head>
 
 <body>
     <header>
-        <h2>Stuff About Me</h2> 
-        <a href = "index.html">Go back to main page</a>       
+        <div class = "back">
+            <nav class="goback">
+        <a href = "index.html">Back</a>
+            </nav>
+        </div>
     </header>
 
-    <hr>
+    <h2 id = "stuffaboutme">Stuff About Me</h2>
+    
+    <div class="section" id = "top">
+        <h2>Things</h2>
+        <ol>
+          <li>
+            <a class = "array" href="#songfav"><h3>Current Favorite Song</h3></a>
+          </li>
+          <li>
+            <a class = "array" href="#gamefav"><h3>Favorite Games</h3></a>
+          </li>
+          <li>
+            <a class = "array" href="#moviefav"><h3>Favorite Movies</h3></a>
+          </li>
+          <li>
+            <a class = "array" href="#tvfav"><h3>Favorite TV Shows</h3></a>
+          </li>
+          <li>
+            <a class = "array" href="#songsfav"><h3>Favorite Songs</h3></a>
+          </li>
+          <li>
+            <a class = "array" href="#booksfav"><h3>Favorite Books</h3></a>
+          </li>
+        </ol>
+      </div>
 
-    <div>
+
+    <div class = "favs" id = "songfav">
         <p>This is my favorite song currently</p>
         <p>Goooo by TNGHT</p>
         <audio controls>
             <source src = "goooo.mp3" type = "audio/mp3">
         </audio>
+        <br>
+        <br>
+        <a class="button" href="#top">Back</a>
     </div>
-    
-    <hr>
 
-    <div>
+    <div class = "favs" id = "gamefav">
         <h1>Favorite Games</h1>
         <table>
             <tbody>
@@ -47,11 +77,10 @@
         </table>
 
         <h6><i>Don't play them.</i></h6>
+        <a class="button" href="#top">Back</a>
     </div>
-
-    <hr>
     
-    <div>
+    <div class = "favs" id = "moviefav" >
         <h1>Favorite Movies</h1>
         <table>
             <tbody>
@@ -69,11 +98,11 @@
                 </tr>
             </tbody>
         </table>
+        <br>
+        <a class="button" href="#top">Back</a>
     </div>
 
-    <hr>
-
-    <div>
+    <div class = "favs" id = "tvfav">
         <h1>Favorite TV Shows</h1>
         <table>
             <tbody>
@@ -104,11 +133,11 @@
             <p>"ATLA is one of those shows that appeals to anyone."</p>
             <cite>- Sister 2</cite>
         </blockquote>
+        <br>
+        <a class="button" href="#top">Back</a>
     </div>
 
-    <hr>
-
-    <div>
+    <div class = "favs" id = "songsfav">
         <h1>Favorite Songs</h1>
         <table>
             <tbody>
@@ -138,11 +167,11 @@
                 </tr>
             </tbody>
         </table>
+        <br>
+        <a class="button" href="#top">Back</a>
     </div>
 
-    <hr>
-
-    <div>
+    <div class = "favs" id = "booksfav">
         <h1>Favorite Books</h1>
         <table>
             <tbody>
@@ -156,9 +185,9 @@
                 </tr>
             </tbody>
         </table>
+        <br>
+        <a class="button" href="#top">Back</a>
     </div>
-
-    <hr>
 
     <footer>
         <h5>Credits to Aryan Parwal</h5>
