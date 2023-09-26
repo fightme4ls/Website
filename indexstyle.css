@@ -9,17 +9,26 @@ body{
 
 
 h1#header {
-    font-size: 45px;
+    font-size: 45px;    
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-display: auto;
     color: azure;
     text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; 
+    animation: fadeout 5s ease-in-out forwards;
 }
 
 p#about-website{
-    font-size: 25px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;
 }
 
 h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
@@ -32,6 +41,8 @@ h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;
 }
 
 a:hover, details:hover {
@@ -59,12 +70,15 @@ a:hover, details:hover {
     position: relative;
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
-    border-radius: 10px;   
+    border-radius: 10px; 
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;  
 }
 
 .overview{
     gap: 20px;
-
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;
 }
 
 .favs{
@@ -73,6 +87,8 @@ a:hover, details:hover {
     margin: 50px 10px;
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 10px;
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;
 }
 
 
@@ -91,7 +107,36 @@ img#github-icon{
 
 
 footer{
-    padding: 20px;
+    padding: 5px;
     text-align: right;
     margin-right: 5px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: reveal 2s ease-in-out 2s forwards;
+}
+
+@keyframes fadeout {
+    0% {
+        font-size: 200px;
+    }
+    25% {
+        font-size: 200px;
+    }
+    75% {
+        font-size: 80px;
+    }
+    100% {
+        font-size: 80px;
+        opacity: 0; 
+    }
+
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
