@@ -47,10 +47,12 @@ li {
 
 ul {
     list-style-type: none;
+    flex-direction: row;
 }
 
 li {
     margin-bottom: 10px;
+    flex-direction: row;
 }
 
 .forms {
