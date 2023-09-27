@@ -1,15 +1,14 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-image: linear-gradient(to right, #726977, #4f0379);
     background-size: auto;
 }
 
-
 h1#header {
-    font-size: 45px;    
+    font-size: 45px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: azure;
@@ -19,11 +18,11 @@ h1#header {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1; 
+    opacity: 1;
     animation: fadeout 3.5s ease-in-out forwards;
 }
 
-p#about-website{
+p#about-website {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -31,23 +30,35 @@ p#about-website{
     animation: show 2s ease-in-out 2s forwards;
 }
 
-h1,h2, h3, h4, h5, h6, p, legend, label, em, a, li{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+legend,
+label,
+em,
+a,
+li {
     color: azure;
 }
 
 ul {
     list-style-type: none;
-  }
+}
 
-li{
+li {
     margin-bottom: 10px;
 }
 
-.forms{
+.forms {
     border-left: #3f3953;
     border-right: #5c7cb6;
 }
-.bar{
+
+.bar {
     background-image: linear-gradient(to right, #3f3953, #7085ab);
     border-radius: 30px;
     display: flex;
@@ -57,27 +68,18 @@ li{
     animation: show 2s ease-in-out 2s forwards;
 }
 
-a:hover, details:hover {
-  background-color: #5c7cb6;
-  width: fit-content;
+a:hover,
+details:hover {
+    background-color: #5c7cb6;
+    width: fit-content;
 }
 
 .links {
     margin: 10px;
 }
 
-.section{
+.section {
     gap: 20px;
-    padding: 20px;
-    position: relative;
-    margin: 50px 10px;
-    background-image: linear-gradient(to right, #3f3953, #7085ab);
-    border-radius: 10px; 
-    opacity: 0;
-    animation: show 2s ease-in-out 2s forwards;  
-}
-
-.favs{
     padding: 20px;
     position: relative;
     margin: 50px 10px;
@@ -87,21 +89,31 @@ a:hover, details:hover {
     animation: show 2s ease-in-out 2s forwards;
 }
 
-img#discord-icon{
+.favs {
+    padding: 20px;
+    position: relative;
+    margin: 50px 10px;
+    background-image: linear-gradient(to right, #3f3953, #7085ab);
+    border-radius: 10px;
+    opacity: 0;
+    animation: show 2s ease-in-out 2s forwards;
+}
+
+img#discord-icon {
     max-width: 20px;
     min-height: 15px;
     margin-left: 5px;
     filter: opacity(75%);
 }
 
-img#github-icon{
+img#github-icon {
     max-width: 15px;
     min-height: 15px;
     margin-left: 5px;
     filter: opacity(75%);
 }
 
-footer{
+footer {
     padding: 5px;
     text-align: right;
     margin-right: 5px;
@@ -137,9 +149,8 @@ input.button {
     }
     100% {
         font-size: 50px;
-        opacity: 0; 
+        opacity: 0;
     }
-
 }
 
 @keyframes show {
@@ -148,5 +159,45 @@ input.button {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1#header {
+        font-size: 30px;
+    }
+    p#about-website {
+        font-size: 40px;
+    }
+    .section,
+    .favs {
+        padding: 10px;
+        margin: 30px 5px;
+        border-radius: 5px;
+    }
+    .bar {
+        flex-direction: column;
+        text-align: center;
+        a.button {
+            margin: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1#header {
+        font-size: 35px;
+    }
+    p#about-website {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    h1#header {
+        font-size: 50px;
+    }
+    p#about-website {
+        font-size: 60px;
     }
 }

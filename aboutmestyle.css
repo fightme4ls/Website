@@ -130,6 +130,26 @@ footer{
     animation: show 2s ease-in-out 2s forwards;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+    .fade-in-text {
+        font-size: 40px;
+    }
+    /* Add more responsive styles here */
+}
+
+/* Medium screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Add your responsive styles here */
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    /* Add your responsive styles here */
+}
+
 @keyframes fade {
     0% {
         font-size: 50px;
@@ -155,5 +175,29 @@ footer{
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+    .fade-in-text {
+        font-size: 40px;
+    }
+    .favs {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .fade-in-text {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .fade-in-text {
+        font-size: 55px;
     }
 }
