@@ -20,6 +20,7 @@ h1#header {
     transform: translate(-50%, -50%);
     opacity: 1;
     animation: fadeout 3.5s ease-in-out forwards;
+    animation-name: inherit;
 }
 
 p#about-website {
