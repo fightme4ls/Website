@@ -19,8 +19,8 @@ h1#header {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
+    animation-name: fadeout;
     animation: fadeout 3.5s ease-in-out forwards;
-    animation-name: inherit;
 }
 
 p#about-website {
@@ -48,17 +48,18 @@ li {
 
 ul {
     list-style-type: none;
-    flex-direction: row;
+    flex-direction: inherit;
 }
 
 li {
     margin-bottom: 10px;
-    flex-direction: row;
 }
 
 .forms {
-    border-left: #3f3953;
-    border-right: #5c7cb6;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
 }
 
 .bar {
@@ -181,9 +182,6 @@ input.button {
     .bar {
         flex-direction: column;
         text-align: center;
-        a.button {
-            margin: 5px;
-        }
     }
 }
 
@@ -204,3 +202,4 @@ input.button {
         font-size: 60px;
     }
 }
+
